@@ -2168,13 +2168,15 @@ function validateValidMobileUser(){
 	         data: JSON.stringify(jsonToBeSend),
 	         success: function(data) {
 	         	
-	         	 if(data.Status == 'Success'){
-	         	 	setUserStatusInLocalStorage("Valid");
-				if(!data.MobileMapRole){
+	         if(data.Status == 'Success'){
+	                  setUserStatusInLocalStorage("Valid");	 
+		          var langu = window.localStorage.getItem("localLanguage");
+                          window.lang.change(langu);
+			/*if(!data.MobileMapRole){
 					window.localStorage.removeItem("MobileMapRole");
 				}else{
 					window.localStorage.setItem("MobileMapRole",data.MobileMapRole);
-				}
+				} */
 	           }else if(data.Status == 'NoAndroidRole'){
 	         	 	successMessage = data.Message;
 	         	 	headerBackBtn=defaultPagePath+'expenzingImagePage.html';
