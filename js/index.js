@@ -2170,7 +2170,7 @@ function validateValidMobileUser(){
 	         	
 	         if(data.Status == 'Success'){
 	          setUserStatusInLocalStorage("Valid");	 
-            //window.lang.change(window.localStorage.getItem("localLanguage"));
+            window.lang.change(window.localStorage.getItem("localLanguage"));
 			/*if(!data.MobileMapRole){
 					window.localStorage.removeItem("MobileMapRole");
 				}else{
