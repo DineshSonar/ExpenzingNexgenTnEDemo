@@ -2169,9 +2169,8 @@ function validateValidMobileUser(){
 	         success: function(data) {
 	         	
 	         if(data.Status == 'Success'){
-	                  setUserStatusInLocalStorage("Valid");	 
-		          var langu = window.localStorage.getItem("localLanguage");
-                   window.lang.change(langu);
+	          setUserStatusInLocalStorage("Valid");	 
+            //window.lang.change(window.localStorage.getItem("localLanguage"));
 			/*if(!data.MobileMapRole){
 					window.localStorage.removeItem("MobileMapRole");
 				}else{
