@@ -3000,7 +3000,6 @@ function onloadDefaultValue(){
 function viewMessages(){
 	var e = { "data" : {"address": "paytm", "body":"You have made payment of Rs.135.00 to om rest.", "date_sent":1482401219880}}
 	 saveIncomingSMSOnLocal(e);
-
 	 var e1 = { "data" : {"address": "freecharge", "body":"Recharge of BSNL mobile for Rs.54 was successful. operator refrence number is 0154324", "date_sent":1482601219880}}
 	 saveIncomingSMSOnLocal(e1);
 	 var e2 = { "data" : {"address": "uber", "body":"You paid uber Rs.134.65 with your paytm wallet. reference number for the transaction is 93123a24", "date_sent":1482701219880}}
