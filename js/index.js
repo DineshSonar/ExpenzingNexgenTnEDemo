@@ -2,8 +2,8 @@ var j = jQuery.noConflict();
 var defaultPagePath='app/pages/';
 var headerMsg = "Expenzing";
 var urlPath;
-var WebServicePath ='http://1.255.255.214:8085/NexstepWebService/mobileLinkResolver.service';
-//var WebServicePath = 'http://live.nexstepapps.com:8284/NexstepWebService/mobileLinkResolver.service';
+//var WebServicePath ='http://1.255.255.214:8085/NexstepWebService/mobileLinkResolver.service';
+var WebServicePath = 'http://live.nexstepapps.com:8284/NexstepWebService/mobileLinkResolver.service';
 //var WebServicePath ='http://1.255.255.36:9898/NexstepWebService/mobileLinkResolver.service';
 var clickedFlagCar = false;
 var clickedFlagTicket = false;
@@ -2171,7 +2171,7 @@ function validateValidMobileUser(){
 	         if(data.Status == 'Success'){
 	                  setUserStatusInLocalStorage("Valid");	 
 		          var langu = window.localStorage.getItem("localLanguage");
-                          window.lang.change(langu);
+                   window.lang.change(langu);
 			/*if(!data.MobileMapRole){
 					window.localStorage.removeItem("MobileMapRole");
 				}else{
